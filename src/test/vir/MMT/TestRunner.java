@@ -1,6 +1,8 @@
 package test.vir.MMT;
 
 import static org.testng.Assert.assertEquals;
+import com.katalon.kata.selenium.PageTemplate;
+
 
 import org.testng.Reporter;
 import org.testng.annotations.Test;
