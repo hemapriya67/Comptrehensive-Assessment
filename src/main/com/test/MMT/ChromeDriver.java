@@ -1,6 +1,9 @@
 package main.com.test.MMT;
 
 import org.openqa.selenium.WebDriver;
+
+import java.beans.Transient;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebDriver;
@@ -14,11 +17,17 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 
 public class ChromeDriver{
     // Calling Chrome and opening make my trip
+  @BeforeMethod
+  public void driverSet(){
         WebDriver driver1;
         System.setProperty("webdriver.chrome.driver","users/lib/drivers/chromedriver");
         driver1= new ChromeDriver();
         driver1.get("https://www.makemytrip.com/");
         Thread.sleep(2000);
+  }
+
+      @Test
+      public void name(){
 
   UtilityMethods utility1 = new UtilityMethods;
 
@@ -57,7 +66,7 @@ public class ChromeDriver{
   utility1.clickElement(destination);
    
 
-
+        }
     
     
 }
