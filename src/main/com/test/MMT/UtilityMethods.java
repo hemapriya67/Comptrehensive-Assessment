@@ -21,7 +21,7 @@ public class UtilityMethods{
      public void selected(WebElement elementToBeSelected){
 
        boolean selectOneWay = elementToBeSelected.isSelected();
-       if(selectOneWay.eqauls(false)){
+       if(selectOneWay.equals(false)){
         clickElement(elementToBeSelected);
        }
      }
